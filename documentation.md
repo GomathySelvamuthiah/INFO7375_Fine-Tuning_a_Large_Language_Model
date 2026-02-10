@@ -61,7 +61,7 @@ peft_config = LoraConfig(
 
 ---
 
-## 2. Data Pipeline {#data}
+## 2. Data Pipeline
 
 ### Dataset: Amazon Product Q&A
 
@@ -170,7 +170,7 @@ def tokenize_function(examples):
 
 ---
 
-## 3. Training Methodology {#training}
+## 3. Training Methodology
 
 ### Hyperparameter Grid Search
 
@@ -186,17 +186,17 @@ def tokenize_function(examples):
 ```python
 TrainingArguments(
     output_dir="./lora_config2",
-    eval_strategy="epoch",           # Evaluate after each epoch
-    save_strategy="epoch",           # Save checkpoints per epoch
-    logging_steps=200,               # Log every 200 steps
-    learning_rate=3e-4,              # AdamW learning rate
-    per_device_train_batch_size=4,  # Batch size per GPU
-    gradient_accumulation_steps=2,  # Effective batch = 4 * 2 = 8
-    num_train_epochs=2,              # Total epochs
-    weight_decay=0.01,               # L2 regularization
-    max_grad_norm=1.0,               # Gradient clipping
-    fp16=False,                      # Use FP32 (T4 doesn't support BF16)
-    load_best_model_at_end=True,    # Load best checkpoint
+    eval_strategy="epoch",           
+    save_strategy="epoch",           
+    logging_steps=200,               
+    learning_rate=3e-4,              
+    per_device_train_batch_size=4,  
+    gradient_accumulation_steps=2,  
+    num_train_epochs=2,              
+    weight_decay=0.01,               
+    max_grad_norm=1.0,               
+    fp16=False,                      
+    load_best_model_at_end=True, 
     metric_for_best_model="eval_loss"
 )
 ```
@@ -240,7 +240,7 @@ def train_lora_config(config_name, lr, epochs, lora_r, lora_alpha, output_dir):
 
 ---
 
-## 4. Evaluation Framework {#evaluation}
+## 4. Evaluation Framework
 
 ### Metrics: ROUGE
 
@@ -280,7 +280,7 @@ def evaluate_model(model, test_data):
 
 ---
 
-## 5. Code Documentation {#code}
+## 5. Code Documentation
 
 ### Key Functions
 
@@ -352,7 +352,7 @@ answer = assistant.generate_answer("Is this waterproof?")
 
 ---
 
-## 6. Reproducibility Guide {#reproducibility}
+## 6. Reproducibility Guide
 
 ### Exact Environment
 ```bash
