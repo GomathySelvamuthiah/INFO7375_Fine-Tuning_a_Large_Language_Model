@@ -177,18 +177,6 @@ pip install -r requirements.txt
 - [Amazon QA Dataset](https://huggingface.co/datasets/sentence-transformers/amazon-qa)
 - [ROUGE Metrics](https://aclanthology.org/W04-1013/) (Lin, 2004)
 
-## 🤝 Contributing
-
-Issues and pull requests welcome!
-
-## 📄 License
-
-MIT License - see LICENSE file
-
-## 👤 Author
-
-Gomathy Selvamuthiah  
-February 2026
 
 ## 🎥 Demo Video
 
