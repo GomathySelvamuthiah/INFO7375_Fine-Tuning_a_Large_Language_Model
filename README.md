@@ -32,8 +32,8 @@ GPU: Tesla T4 or equivalent (15GB VRAM)
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/GomathySelvamuthiah/E-Commerce_Product_QA_Assistant.git
-cd E-Commerce_Product_QA_Assistant
+git clone https://github.com/GomathySelvamuthiah/INFO7375_finetuning.git
+cd INFO7375_Fine-Tuning_a_Large_Language_Model
 ```
 
 2. **Create virtual environment** (recommended):
